@@ -1,166 +1,83 @@
-\# 🪐 RegolithBot: Autonomous Mars Excavation Simulator
+# 🪐 RegolithBot: Autonomous Mars Excavation Simulator
 
-
-
-\*\*RegolithBot\*\* is a modular Python-based system designed to simulate robotic excavation, terrain analysis, and regolith classification for future Mars colonies.
-
-
+**RegolithBot** is a modular Python-based system designed to simulate robotic excavation, terrain analysis, and regolith classification for future Mars colonies.
 
 Currently under active development, it lays the foundation for AI-assisted construction, habitat planning, and in-situ resource utilization (ISRU) on the Martian surface.
 
-
-
 ---
 
+## ✅ Completed Modules
 
-
-\## ✅ Completed Modules
-
-
-
-\### 1. `terrain\_mapping.py`
-
+### 1. `terrain_mapping.py`
 Simulates Martian terrain using LiDAR/stereo depth data (or synthetic input).  
-
 Includes:
-
-\- Elevation map generation
-
-\- Slope analysis
-
-\- Flat zone detection (for construction or excavation)
-
-\- Terrain visualization
-
-\- Export to 3D point cloud (Open3D compatible)
-
-
+- Elevation map generation
+- Slope analysis
+- Flat zone detection (for construction or excavation)
+- Terrain visualization
+- Export to 3D point cloud (Open3D compatible)
 
 ---
 
-
-
-\### 2. `sample\_analysis.py`
-
+### 2. `sample_analysis.py`
 Models in-situ chemical analysis of regolith samples using simulated spectrometry.  
-
 Includes:
-
-\- Composition breakdown (e.g. Fe₂O₃, SiO₂, H₂O, perchlorates, etc.)
-
-\- Automated sample classification:
-
-&nbsp; - 💧 Water Extraction Candidate
-
-&nbsp; - 🏗️ Construction Grade
-
-&nbsp; - 🟡 Mixed Utility
-
-&nbsp; - ⚠️ Hazardous (toxic)
-
-\- JSON report export
-
-
+- Composition breakdown (e.g. Fe₂O₃, SiO₂, H₂O, perchlorates, etc.)
+- Automated sample classification:
+  - 💧 Water Extraction Candidate
+  - 🏗️ Construction Grade
+  - 🟡 Mixed Utility
+  - ⚠️ Hazardous (toxic)
+- JSON report export
 
 ---
 
-
-
-\### 3. `excavation\_planner.py`
-
+### 3. `excavation_planner.py`
 Generates a priority map by combining terrain flatness and sample utility to guide where robots should dig.  
-
 Includes:
-
-\- Scoring system based on regolith classification
-
-\- Terrain penalty for non-flat zones
-
-\- Top excavation site selection
-
-\- Heatmap visualization of excavation zones
-
-
+- Scoring system based on regolith classification
+- Terrain penalty for non-flat zones
+- Top excavation site selection
+- Heatmap visualization of excavation zones
 
 ---
 
+## 🚧 In Progress
 
-
-\## 🚧 In Progress
-
-
-
-\### 4. `main.py`
-
+### 4. `main.py`
 This orchestration script will:
+- Tie all modules together
+- Generate terrain and sample data
+- Run excavation planning
+- Control future robotic actions (via arm controller)
 
-\- Tie all modules together
-
-\- Generate terrain and sample data
-
-\- Run excavation planning
-
-\- Control future robotic actions (via arm controller)
-
-
-
-Estimated: \*\*WIP\*\*
-
-
+Estimated: **WIP**
 
 ---
 
-
-
-\### 5. `arm\_control.py`
-
+### 5. `arm_control.py`
 Simulates robotic arm behavior for:
+- Targeted movement using (mock) inverse kinematics
+- Digging operations
+- Gripper actions (grab/release)
+- Sample transport
 
-\- Targeted movement using (mock) inverse kinematics
-
-\- Digging operations
-
-\- Gripper actions (grab/release)
-
-\- Sample transport
-
-
-
-Estimated: \*\*WIP\*\*
-
-
+Estimated: **WIP**
 
 ---
 
+## 📦 Project Goals
 
-
-\## 📦 Project Goals
-
-
-
-\- Provide an extensible, modular pipeline for Martian regolith research
-
-\- Visualize terrain + excavation maps in Python
-
-\- Train future AI-based excavation and planning agents
-
-\- Enable hardware integration with ROS in later phases
-
-
+- Provide an extensible, modular pipeline for Martian regolith research
+- Visualize terrain + excavation maps in Python
+- Train future AI-based excavation and planning agents
+- Enable hardware integration with ROS in later phases
 
 ---
 
-
-
-\## 🛠️ Installation
-
-
+## 🛠️ Installation
 
 ```bash
-
 git clone https://github.com/your-username/RegolithBot
-
 cd RegolithBot
-
 pip install -r requirements.txt
-
