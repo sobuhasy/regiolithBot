@@ -6,7 +6,7 @@ Currently under active development, it lays the foundation for AI-assisted const
 
 ---
 
-## ✅ Completed Modules
+## ✅ Software Modules
 
 ### 1. `terrain_mapping.py`
 Simulates Martian terrain using LiDAR/stereo depth data (or synthetic input).  
@@ -42,16 +42,12 @@ Includes:
 
 ---
 
-## 🚧 In Progress
-
 ### 4. `main.py`
 This orchestration script will:
 - Tie all modules together
 - Generate terrain and sample data
 - Run excavation planning
 - Control future robotic actions (via arm controller)
-
-Estimated: **WIP**
 
 ---
 
@@ -61,8 +57,6 @@ Simulates robotic arm behavior for:
 - Digging operations
 - Gripper actions (grab/release)
 - Sample transport
-
-Estimated: **WIP**
 
 ---
 
